@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="styles/contact.css" />
+<section class="contact" id="contact">
+  <div class="call-to-action ascale">
+    <h2>Is Arthur Murray right for YOU?</h2>
+    <p class="contact-tag">we value integrity over experience</p>
+
+    <p>
+      We’re looking for driven, team oriented individuals who are willing to
+      take initiative. If you love working with people, like to travel, and want
+      to find your passion, this could be the place for you. We’ve learned we
+      can teach anyone to dance, finding the right people is what matters most.
+      No experience necessary. Benefits included.
+    </p>
+
+    <p>Apply today and see what a career in dance can do for you!</p>
+  </div>
+  <form
+    name="careersForm"
+    method="POST"
+    id="careersForm"
+    action="./careers-thank-you.html"
+    class="form"
+    data-netlify="true"
+  >
+    <h2>Start a new career today!</h2>
+    <fieldset>
+      <p class="form-info">Send us your info and we'll get you started.</p>
+      <p class="requiredText">
+        <small
+          >Fields marked with an
+          <span class="required" role="presentation"></span>are required</small
+        >
+      </p>
+      <label class="required" for="name"> Name </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        autocomplete="name"
+        placeholder="Name"
+        class="input"
+        aria-required="true"
+        required
+      />
+      <p>Please enter your name.</p>
+      <label class="required" for="email"> Email </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        autocomplete="email"
+        placeholder="Email"
+        class="input"
+        aria-required="true"
+        required
+      />
+      <p>Please enter a valid email address.</p>
+      <label class="required" for="phone"> Phone </label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        autocomplete="tel"
+        pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
+        placeholder="Phone"
+        title="Enter US phone number"
+        class="input"
+        aria-required="true"
+        required
+      />
+      <p>Please enter a valid phone number.</p>
+      <div class="radio-buttons">
+        <p>
+          Location <span class="required smaller" role="presentation"></span>
+        </p>
+        <input
+          type="radio"
+          name="location"
+          value="chevyChase"
+          id="chevyChase"
+          class="locations-input"
+          checked="true"
+        />
+        <label for="chevyChase">Chevy Chase</label>
+      </div>
+
+      <button type="submit" id="submit" value="submit">Submit</button>
+    </fieldset>
+  </form>
+</section>

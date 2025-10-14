@@ -1,0 +1,13 @@
+.calendar {
+  display: grid;
+  grid-template-columns: calc(100% - 2.3rem);
+  text-align: center;
+  justify-content: center;
+  max-width: 800px;
+}
+
+@media screen and (min-width: 1000px) {
+  .calendar-header {
+    margin-top: 0.5em;
+  }
+}

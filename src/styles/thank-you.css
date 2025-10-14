@@ -1,0 +1,58 @@
+.thank-you-outer-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.thank-you-container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+}
+
+.thank-you-card {
+  margin: 10em 1em auto;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 1em 1em 1em;
+}
+.thank-you-card h1 {
+  font-size: var(--h3);
+  margin-bottom: 0.3em;
+  font-weight: 500;
+}
+.thank-you-card p {
+  margin: 0.5em 0;
+}
+.thank-you-card a {
+  color: var(--darkgray);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-to-site {
+  margin-top: 0.5em;
+}
+
+.back-to-site a:hover {
+  color: var(--arthurMurrayBlue);
+  text-decoration: none;
+}
+.back-to-site a::before {
+  color: var(--darkblue);
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  font-size: 0.9em;
+  content: "\f060";
+}
+.back-to-site a:hover::before {
+  color: var(--onbeatblue);
+}
+
+@media screen and (min-width: 500px) {
+  .thank-you-card {
+    margin: auto 1em auto;
+  }
+}

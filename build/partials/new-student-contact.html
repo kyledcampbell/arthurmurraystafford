@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="styles/contact.css" />
+<section class="contact" id="contact">
+  <div class="call-to-action ascale">
+    <h2>
+      New Student Special <br />
+      <span class="smaller-heading">First Lesson is Free</span>
+    </h2>
+    <p class="contact-tag">What to expect on your first lesson</p>
+    <p>
+      After answering a few questions about your goals, aspirations, and the
+      look and feel you’d like to have, you'll be guided through a few basics by
+      one of our highly-trained instructors.
+    </p>
+    <p>
+      You'll start to learn to dance on your very first lesson, and leave with a
+      plan of action for the next few sessions.
+    </p>
+    <p>
+      At Arthur Murray, we've developed a fool-proof method to help you learn to
+      dance the quickest way possible and achieve your goals.
+    </p>
+  </div>
+  <form
+    name="contactForm"
+    method="POST"
+    id="contactForm"
+    action="./thank-you.html"
+    class="form"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+  >
+    <h2>Start dancing today!</h2>
+    <fieldset>
+      <p class="form-info">Send us your info and we'll get you started.</p>
+      <p class="requiredText">
+        <small
+          >Fields marked with an
+          <span class="required" role="presentation"></span>are required</small
+        >
+      </p>
+      <div class="namebox">
+        <firstname style="margin-right: 1rem">
+          <label class="required" for="fname"> First Name </label>
+          <input
+            type="text"
+            name="fname"
+            id="name"
+            autocomplete="given-name"
+            placeholder="First Name"
+            class="input-name first"
+            aria-required="true"
+            required
+          />
+          <p>Please enter first name.</p>
+        </firstname>
+        <lastname>
+          <label class="required" for="lname"> Last Name </label>
+          <input
+            type="text"
+            name="lname"
+            id="name"
+            autocomplete="family-name"
+            placeholder="Last Name"
+            class="input-name last"
+            aria-required="true"
+            required
+          />
+          <p>Please enter last name.</p>
+        </lastname>
+      </div>
+      <label class="required" for="email"> Email </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        autocomplete="email"
+        placeholder="Email"
+        class="input"
+        aria-required="true"
+        required
+      />
+      <p>Please enter a valid email address.</p>
+      <label class="required" for="phone"> Phone </label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        autocomplete="tel"
+        pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
+        placeholder="Phone"
+        title="Enter US phone number"
+        class="input"
+        aria-required="true"
+        required
+      />
+      <p>Please enter a valid phone number.</p>
+      
+      <div class="radio-buttons">
+        <p>Requesting details</p>
+        <input
+          type="radio"
+          name="details"
+          value="justForFun"
+          id="justForFun"
+          class="locations-input"
+          checked="true"
+        />
+        <label for="justForFun">Just for fun</label>
+        <input
+          type="radio"
+          name="details"
+          value="weddingDance"
+          id="weddingDance"
+          class="locations-input"
+        />
+        <label for="weddingDance">Wedding</label>
+        <input
+          type="radio"
+          name="details"
+          value="specialOccasion"
+          id="specialOccasion"
+          class="locations-input"
+        />
+        <label for="specialOccasion">Special Occasion</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          class="consent-check"
+          name="consent"
+          required
+        /><label class="consent-label" for="consent">
+          By providing my phone number, I agree to be contacted by Arthur Murray
+          Chevy Chase via SMS regarding information on dance lessons. Message
+          and data rates may apply. Message frequency varies</label
+        >
+      </div>
+      <p class="hidden">
+        <label> Don't fill this out if you're human: <input name="bot-field" />
+      </p>
+      <button type="submit" id="submit" value="submit">Submit</button>
+    </fieldset>
+  </form>
+</section>

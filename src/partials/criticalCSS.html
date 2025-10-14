@@ -1,0 +1,722 @@
+<style>
+  :root {
+    --arthurMurrayBlue: #061d37;
+    --mediumblue: hsl(223, 30%, 47%);
+    --lightblue: hsl(223, 40%, 70%);
+    --arthurMurrayYellow: #ffb600;
+    --darkgray: #333;
+    --lightgray: #ccc;
+    --white: hsl(0, 0%, 100%);
+    --black: #000;
+    --offwhite: hsl(0, 0%, 92%);
+    --lightyellow: hsl(48, 100%, 85%);
+    --mediumyellow: hsl(48, 90%, 60%);
+    --base-size: 1em;
+    --type-scale: 1.125;
+    --h5: calc(var(--base-size) * var(--type-scale));
+    --h4: calc(var(--h5) * var(--type-scale));
+    --h3: calc(var(--h4) * var(--type-scale));
+    --h2: calc(var(--h3) * var(--type-scale));
+    --h1: calc(var(--h2) * var(--type-scale));
+  }
+  *,
+  html {
+    box-sizing: border-box;
+  }
+  * {
+    padding: 0;
+    scroll-margin-top: 59px;
+    scroll-behavior: smooth;
+  }
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font: 112.5%/1.45em Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+  }
+  body,
+  h1,
+  h2,
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  *,
+  body {
+    margin: 0;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    word-wrap: break-word;
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt", "kern";
+    min-height: 100vh;
+  }
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1.45rem;
+    color: inherit;
+    font-weight: 350;
+    line-height: 1.2;
+    font-size: calc(
+      calc(calc(calc(calc(1em * 1.125) * 1.125) * 1.125) * 1.125) * 1.125
+    );
+    font-size: var(--h1);
+  }
+  h2,
+  h3 {
+    font-size: calc(calc(calc(calc(1em * 1.125) * 1.125) * 1.125) * 1.125);
+    font-size: var(--h2);
+  }
+  h1,
+  h3 {
+    text-rendering: optimizeLegibility;
+  }
+  h3 {
+    line-height: 1.2em;
+    font-size: calc(calc(calc(1em * 1.125) * 1.125) * 1.125);
+    font-size: var(--h3);
+  }
+  h4 {
+    font-size: calc(calc(1em * 1.125) * 1.125);
+    font-size: var(--h4);
+  }
+  h5 {
+    font-size: calc(1em * 1.125);
+    font-size: var(--h5);
+  }
+  p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: var(--base-size);
+    font-size: 0.85em;
+  }
+  .text_small,
+  small {
+    font-size: calc(1em / 1.125);
+    font-size: calc(var(--base-size) / var(--type-scale));
+  }
+  .fs-normal {
+    font-style: normal;
+  }
+  .font-wfix {
+    font-feature-settings: "ss09";
+  }
+  h1,
+  h2,
+  h3,
+  li,
+  p {
+    font-feature-settings: "kern", "liga", "clig", "calt";
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    list-style: none;
+  }
+  @supports (font-variation-settings: "wdth" 115) {
+    body,
+    html,
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: "Josefin Sans", sans-serif;
+    }
+  }
+  .template-body a[href*="//"]:not([href*="arthurmurraysocal.com"]):not([href*="onbeatmarketing.com"]):not([href*="stripe.com"])::after
+  {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    content: " \f35d";
+    font-size: 0.5em;
+    vertical-align: top;
+  }
+  @media (min-width: 540px) {
+    :root {
+      --type-scale: 1.2;
+    }
+  }
+  @media (min-width: 1052px) {
+    :root {
+      --type-scale: 1.25;
+    }
+  }
+  .d-none {
+    display: none;
+  }
+  .v-hidden {
+    visibility: hidden;
+    transition: 2s;
+  }
+  a:focus {
+    outline-color: var(--darkblue);
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  .screen-reader-text:active,
+  .screen-reader-text:focus,
+  .screen-reader-text:hover {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    left: 1em;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .logo {
+    width: 160px;
+    margin: 0;
+  }
+  .navWrap {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    height: 54px;
+    width: 100%;
+    background-color: var(--arthurMurrayBlue);
+    border-bottom: 1px solid var(--lightblue);
+    box-shadow: 0 1px 8px #223055;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .navWrap nav > ul li label {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 1rem 2rem;
+    color: var(--darkgray);
+    border-bottom: solid 1px var(--lightgray);
+    transition: 1s ease-in-out;
+    position: relative;
+  }
+  .navWrap nav ul li label {
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 99;
+    background-color: var(--offwhite);
+    font-weight: 350;
+  }
+  .navWrap nav ul li input,
+  input#navToggle {
+    display: none;
+  }
+  .navWrap nav ul li label:hover {
+    background-color: var(--white);
+  }
+  input#navToggle ~ label {
+    position: relative;
+    padding: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  input#navToggle ~ label > span,
+  input#navToggle ~ label > span::after,
+  input#navToggle ~ label > span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    height: 0.08rem;
+    width: 1.4rem;
+    opacity: 1;
+    background: #fff;
+    transition: 0.22s ease-in-out;
+  }
+  input#navToggle ~ label > span::before {
+    top: -0.5rem;
+  }
+  input#navToggle ~ label > span::after {
+    top: 0.5rem;
+  }
+  .navWrap nav {
+    position: absolute;
+    z-index: -1;
+    top: 3rem;
+    left: 110%;
+    width: 100%;
+    transition: all 0.22s ease-in-out;
+  }
+  #navToggle:checked ~ label > span {
+    width: 0;
+    background: 0 0;
+    transition: all 0.22s ease-in-out;
+  }
+  #navToggle:checked ~ label > span::after,
+  #navToggle:checked ~ label > span::before {
+    transform: rotateZ(45deg);
+    top: 0;
+    transition: all 0.22s ease-in-out;
+  }
+  #navToggle:checked ~ label > span::after {
+    transform: rotateZ(-45deg);
+  }
+  #navToggle:checked ~ nav {
+    left: 0;
+    transition: all 0.22s ease-in-out;
+  }
+  .navWrap nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--offwhite);
+    border-left: var(--offwhite);
+    box-shadow: 0 1px 8px #223055;
+    transition: all 0.22s ease-in-out;
+  }
+  .navWrap nav > ul {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    list-style-type: none;
+  }
+  .navWrap nav > ul li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem 1rem 0.5rem;
+    color: var(--darkgray);
+    border-bottom: solid 1px var(--lightgray);
+    transition: 0.14s ease-in-out;
+    font-weight: 350;
+  }
+  .navWrap nav > ul li label i {
+    display: block;
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+  }
+  .navWrap nav ul ul a {
+    font-size: 0.9rem;
+    padding: 1rem 2rem 0.75rem;
+  }
+  .navWrap nav > ul > li:last-of-type::before {
+    content: "";
+    display: block;
+    padding: 0.5rem;
+  }
+  .navWrap nav .btn {
+    background: var(--arthurMurrayBlue);
+    font-weight: 400;
+    font-size: 0.9em;
+    border-bottom: none;
+    border-radius: 25px;
+    color: var(--white);
+    width: 190px;
+    padding: 0.5rem 0.6rem 0.25rem;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid var(--arthurMurrayBlue);
+    text-transform: capitalize;
+    transition: all 0.4s ease-out;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+  }
+  .navWrap nav .btn:hover {
+    color: var(--darkgray);
+    box-shadow: inset 0 0 1em 2em var(--arthurMurrayYellow);
+    transition: all 0.4s ease-out;
+    border: 1px solid var(--lightgray);
+  }
+  .navWrap nav ul li label ~ ul {
+    position: static;
+    z-index: -5;
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+  }
+  .navWrap nav ul li input:checked ~ ul {
+    overflow: hidden;
+    max-height: 100%;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .navWrap nav ul li label i {
+    transition: transform 0.3s ease-out;
+  }
+  .navWrap nav ul li input:checked ~ label i {
+    transform: rotateZ(-90deg);
+    transition: transform 0.3s ease-out;
+  }
+  .navWrap nav > ul li a:hover {
+    color: var(--arthurMurrayBlue);
+    background-color: var(--white);
+  }
+  .contact-button-mobile i {
+    color: var(--arthurMurrayYellow);
+  }
+  .contact-button-mobile {
+    font-size: 1.7em;
+  }
+  .menu-group {
+    display: grid;
+    grid-template-columns: 2.7em 2.7em;
+    justify-items: end;
+    align-items: center;
+  }
+  @media screen and (min-width: 500px) {
+    .navWrap nav::after,
+    .navWrap nav > ul {
+      width: 400px;
+    }
+  }
+  @supports not (-webkit-touch-callout: none) {
+    @media screen and (min-width: 1000px) {
+      .navWrap nav ul li:last-of-type::before,
+      .navWrap nav::after {
+        display: none;
+        padding: initial;
+      }
+      .navToggleLabel,
+      .navWrap nav ul li label i.fas {
+        display: none;
+      }
+      .navWrap {
+        display: grid;
+        grid-template-columns: 150px minmax(auto, 1050px);
+        justify-content: center;
+      }
+      .logo {
+        width: 160px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      .navWrap nav,
+      .navWrap nav > ul {
+        position: static;
+        transition: none;
+      }
+      .navWrap nav {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+      .navWrap nav > ul {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: initial;
+        width: 100%;
+      }
+      .navWrap nav > ul > li {
+        position: relative;
+        display: flex;
+        transition: none;
+      }
+      .navWrap nav ul li label ~ ul {
+        margin-top: 48px;
+        transform: translateY(-50%) scaleY(0);
+        transition: all 0.2s 0.1s ease-out;
+        opacity: 0;
+        background-color: #d3d3d3;
+        padding: 0.5em;
+        position: fixed;
+        width: 172px;
+        transform-origin: center;
+      }
+      .navWrap nav > ul li label {
+        color: var(--offwhite);
+        width: auto;
+        padding: 0.75rem 0.9rem 2rem;
+        transition: none;
+      }
+      .navWrap nav > ul > li > a {
+        padding: 0.75rem 1rem 0.5rem;
+        color: var(--offwhite);
+        transition: none;
+      }
+      .navWrap nav ul li a {
+        border-bottom: none;
+      }
+      .navWrap nav ul li label ~ ul li a {
+        color: var(--darkgray);
+        padding: 0.6em;
+        transition: none;
+      }
+      .navWrap nav ul li a:hover {
+        background: 0 0;
+        color: var(--white);
+      }
+      .navWrap nav .btn:hover,
+      .navWrap nav > ul > li > a:hover {
+        color: var(--arthurMurrayYellow);
+        transition: none;
+      }
+      .navWrap nav ul ul li > a:hover {
+        background: var(--arthurMurrayBlue);
+        color: var(--white);
+      }
+      .navWrap nav ul li label {
+        background-color: transparent;
+        width: auto;
+        border: 0;
+        display: block;
+        cursor: default;
+      }
+      .navWrap nav ul li label:hover {
+        color: var(--white);
+        background-color: transparent;
+      }
+      .navWrap nav ul li label:hover ~ ul,
+      .navWrap nav ul li label ~ ul:hover {
+        transform: none;
+        z-index: 5;
+        max-height: 100%;
+        transition: all 0.3s 0.2s ease-out;
+        opacity: 1;
+        display: block;
+      }
+      .navWrap nav ul li label ~ ul li {
+        text-align: left;
+      }
+      .navWrap nav .btn {
+        background: var(--arthurMurrayYellow);
+        color: var(--arthurMurrayBlue);
+        border: 1px solid var(--arthurMurrayYellow);
+        padding: 0.25rem 0 0.1rem;
+        margin-left: 1em;
+        width: 190px;
+        transition: all 0.4s ease-out;
+      }
+      .navWrap nav .btn:hover {
+        box-shadow: inset 0 0 1em 2em var(--arthurMurrayBlue),
+          0 0 0.5em var(--arthurMurrayYellow);
+        transition: all 0.4s ease-out;
+      }
+      .white {
+        color: var(--white);
+      }
+      .navWrap nav ul li input:checked ~ ul {
+        max-height: 0;
+        transform: none;
+        opacity: 0;
+      }
+      .contact-button-mobile {
+        display: none;
+      }
+      .menu-group {
+        display: block;
+      }
+    }
+  }
+  @-webkit-keyframes clear {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes clear {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @-webkit-keyframes slide-in-left {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-in-right {
+    0% {
+      transform: translateX(2%);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(2%);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slide-in-right-header {
+    0% {
+      transform: translateX(100%) scale(0.92);
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(0) scale(0.92);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right-header {
+    0% {
+      transform: translateX(100%) scale(0.92);
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(0) scale(0.92);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in {
+    0% {
+      opacity: 1;
+      transform: scale(0.98);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @media screen and (min-width: 857px) {
+    .appear,
+    .opacity0 {
+      opacity: 0;
+    }
+    .appear {
+      -webkit-animation: clear 1s 0.5s forwards;
+      animation: clear 1s 0.5s forwards;
+      transform: scale(0.9);
+    }
+    .fade-in {
+      -webkit-animation: fade-in 1s 0.1s forwards;
+      animation: fade-in 1s 0.1s forwards;
+    }
+    .fade-in,
+    .header-slide-in {
+      opacity: 0;
+    }
+    .slide-in-left {
+      -webkit-animation: slide-in-left 1.5s cubic-bezier(0.16, 0.84, 0.44, 1)
+        forwards;
+      animation: slide-in-left 1.5s cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+      overflow: hidden;
+    }
+    .delay1 {
+      -webkit-animation-delay: 150ms;
+      animation-delay: 150ms;
+    }
+    .delay2 {
+      -webkit-animation-delay: 300ms;
+      animation-delay: 300ms;
+    }
+    .slide-in-right {
+      -webkit-animation: slide-in-right 2s cubic-bezier(0.16, 0.84, 0.44, 1)
+        forwards;
+      animation: slide-in-right 2s cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+      overflow: hidden;
+      opacity: 0;
+    }
+    .scale-in {
+      -webkit-animation: scale-in 0.4s 0.8s ease-in-out both;
+      animation: scale-in 0.4s 0.8s ease-in-out both;
+      opacity: 0;
+    }
+    .header-slide-in {
+      -webkit-animation: slide-in-right-header 1300ms 0.5s forwards;
+      animation: slide-in-right-header 1300ms 0.5s forwards;
+    }
+  }
+</style>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thank You | Arthur Murray Chevy Chase</title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Thank you for your purchase with the Arthur Murray
+      Dance Studio in Chevy Chase, MD."
+    />
+
+    @@include('./partials/criticalCSS.html')
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <!-- <link rel="stylesheet" href="styles/thank-you.css" /> -->
+    <script defer src="./scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    @@include('./partials/header.html')
+    <main id="content" class="thank-you">
+      <section class="centered thank-you-container fade-in">
+        <link rel="stylesheet" href="styles/purchase-form.css" />
+        <section class="contact" id="contact">
+          <form
+            name="purchaseForm"
+            method="POST"
+            id="contactForm"
+            action="./thank-you-gc-completed.html"
+            class="form"
+            data-netlify="true"
+          >
+            <h2>Thank you for Purchasing Dance Lessons!</h2>
+            <p class="red-text">* Don't Stop Now! You're almost there!! *</p>
+            <fieldset>
+              <p class="form-info">
+                Please fill out the following form so we may contact you
+                regarding your purchase.
+              </p>
+              <p class="requiredText">
+                <small
+                  >Fields marked with an
+                  <span class="required" role="presentation"></span>are
+                  required</small
+                >
+              </p>
+              <label class="required" for="purchaserEmail">
+                Purchaser's Email
+              </label>
+              <input
+                type="email"
+                name="purchaserEmail"
+                id="purchaserEmail"
+                autocomplete="email"
+                placeholder="Purchaser's Email"
+                class="input"
+                aria-required="true"
+                required
+              />
+              <p>Please enter a valid email address.</p>
+              <h3>Dance Lessons Contact Info:</h3>
+              <label class="required" for="name"> Full Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="name"
+                placeholder="Name"
+                class="input"
+                aria-required="true"
+                required
+              />
+              <p>Please enter your name.</p>
+              <label class="required" for="email"> Email </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                placeholder="Email"
+                class="input"
+                aria-required="true"
+                required
+              />
+              <p>Please enter a valid email address.</p>
+              <label class="required" for="phone"> Phone </label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                autocomplete="tel"
+                pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
+                placeholder="Phone"
+                title="Enter US phone number"
+                class="input"
+                aria-required="true"
+                required
+              />
+              <p>Please enter a valid phone number.</p>
+              <label for="message">Other Info/Special Requests</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                rows="4"
+              ></textarea>
+
+              <button type="submit" id="submit" value="submit">Submit</button>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

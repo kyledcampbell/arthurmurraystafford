@@ -1,0 +1,28 @@
+.header {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.7)),
+    url(../images/chevyChase.jpg);
+  background-size: cover;
+  background-position: 30% top;
+}
+.header span {
+  display: block;
+}
+.template-header-text h1 span {
+  display: block;
+}
+
+@media screen and (min-width: 615px) {
+  .careers-header {
+    background-size: cover;
+    background-position-y: 50%;
+  }
+  .header span {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .template-header-text h1 span {
+    display: inline-block;
+  }
+}

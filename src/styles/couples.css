@@ -1,0 +1,62 @@
+.header {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.7)),
+    url(../images/couplesDanceCover.jpg);
+  background-position: 80% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.template-body {
+  background-image: linear-gradient(
+      174deg,
+      hsla(0, 0%, 92%, 0.8) 0%,
+      hsla(0, 0%, 92%, 0.8) 55%,
+      var(--arthurMurrayBlue) 55.08%,
+      var(--arthurMurrayBlue) 87%,
+      var(--lightgray) 87.08%
+    ),
+    url(../images/FootprintsBackground.svg);
+}
+
+@media screen and (min-width: 500px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 50%,
+        var(--arthurMurrayBlue) 50.08%
+      ),
+      url(../images/FootprintsBackground.svg);
+  }
+}
+
+@media screen and (min-width: 615px) {
+  .header {
+    background-position: 75% top;
+  }
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 53%,
+        var(--arthurMurrayBlue) 53.08%
+      ),
+      url(../images/FootprintsBackground.svg);
+  }
+}
+
+@media screen and (min-width: 747px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 49%,
+        var(--arthurMurrayBlue) 49.08%
+      ),
+      url(../images/FootprintsBackground.svg);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .video-player {
+    margin: 0.5em auto 0 1.5em;
+  }
+}

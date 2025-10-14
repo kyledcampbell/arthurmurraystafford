@@ -1,0 +1,174 @@
+:root {
+  --arthurMurrayBlue: hsl(223, 100%, 17%); /* 	#001957 */
+  --mediumblue: hsl(223, 30%, 47%); /* 	#54689c */
+  --lightblue: hsl(223, 40%, 70%); /* 	#94a5d1 */
+  --arthurMurrayYellow: hsl(48, 100%, 50%); /* 	#ffcc00 */
+  --darkgray: #333;
+  --lightgray: #ccc;
+  --white: hsl(0, 0%, 100%);
+  --black: #000;
+  --offwhite: hsl(0, 0%, 92%);
+  --lightyellow: hsl(48, 100%, 85%);
+  --mediumyellow: hsl(48, 90%, 60%);
+  --base-size: 1em;
+  --type-scale: 1.125;
+  --h5: calc(var(--base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 59px;
+  scroll-behavior: smooth;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  visibility: visible !important;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 350;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  text-rendering: optimizeLegibility;
+  line-height: 1.2;
+  font-size: var(--h1);
+}
+h2 {
+  margin-bottom: 1.45rem;
+  font-weight: 350;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  line-height: 1.2;
+  font-size: var(--h2);
+}
+
+h3 {
+  margin-bottom: 1.45rem;
+  font-weight: 350;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 1.2em;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5rem;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  font-weight: 300;
+  font-size: var(--base-size);
+  font-size: 0.85em;
+}
+small,
+.text_small {
+  font-size: calc(var(--base-size) / var(--type-scale));
+}
+
+.fs-normal {
+  font-style: normal;
+}
+.font-wfix {
+  font-feature-settings: "ss09";
+}
+
+li {
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+@supports (font-variation-settings: "wdth" 115) {
+  html,
+  body,
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+
+.template-body a[href*="//"]:not([href*="arthurmurraysocal.com"]):not([href*="onbeatmarketing.com"]):not([href*="stripe.com"])::after
+{
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  content: " \f35d";
+  font-size: 0.5em;
+  vertical-align: top;
+}
+
+@media (min-width: 540px) {
+  :root {
+    --type-scale: 1.2;
+  }
+}
+@media (min-width: 1052px) {
+  :root {
+    --type-scale: 1.25;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.v-hidden {
+  visibility: hidden;
+  transition: 2s;
+}
+a:focus {
+  outline-color: var(--darkblue);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

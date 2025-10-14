@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page not found | Arthur Murray Chevy Chase</title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Oops Page Not Found
+    It seems we can't find what you're looking for. Try re-typing the url or visit our home page and navigate to where you'd like to go."
+    />
+    @@include('./partials/criticalCSS.html')
+    <link rel="stylesheet" href="/styles/page-template.css" />
+    <link rel="stylesheet" href="/styles/404.css" />
+  </head>
+
+  <body>
+    @@include('./partials/header.html')
+    <main id="content" class="thank-you">
+      <section class="thank-you-container fade-in">
+        <figure class="thank-you-card">
+          <figcaption class="caption">
+            <h1>404 | Oops Page Not Found</h1>
+            <p>
+              It seems we can't find what you're looking for. Try re-typing the
+              url or visit our home page and navigate to where you'd like to go.
+            </p>
+            <img
+              src="./images/kitty-404.svg"
+              alt="Upset, upside-down cat with head in a fishbowl"
+            />
+            <p class="back-to-site"><a href="/"> Back to home</a></p>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Swing Lessons Chevy Chase | Arthur Murray Dance Studio Chevy Chase
+    </title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Swing Dance Lessons in Chevy Chase Maryland at Arthur Murray Dance Studio Chevy Chase. We teach east coast swing, lindy hop, and west coast swing"
+    />
+    @@include('./partials/schema-main.html')
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/swing.css" />
+  </head>
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1>
+            <span>Swing Dance Lessons</span> <span>in Chevy Chase, MD</span>
+          </h1>
+          <h2>Arthur Murray Dance Studio Chevy Chase</h2>
+        </div>
+      </section>
+      <section class="template-body">
+        <div class="template-text-1">
+          <h3 id="swing">Swing Dance Lessons in Maryland</h3>
+          <p>
+            As the song goes: "It don't mean a thing if it ain't got that
+            swing!" When New York big bands began to swing in the 1920s, dancers
+            took to their feet, creating iconic styles such as the Charleston,
+            the Balboa and the Lindy Hop.
+          </p>
+          <p>
+            Thanks to its uplifting music, engaging social interaction and
+            physical benefits, partygoers on both sides of the Atlantic became
+            hooked on Swing dancing. At Arthur Murray Dance Studios, we focus on
+            three main styles of Swing: East Coast Swing, Lindy Hop, and West
+            Coast Swing.
+          </p>
+        </div>
+        <div class="video-player">
+          <iframe
+            src="https://player.vimeo.com/video/532060114?h=009df7df2f"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Arthur Murray"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="template-angle">
+          <picture>
+            <source type="image/webp" srcset="./images/swingCouple.webp" />
+            <img
+              src="./images/swingCouple.png"
+              alt="Swing couple dancing together"
+              width="500"
+              height="333"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="template-text-2">
+            <h3 id="lindy">Lindy Hop Lessons</h3>
+            <p>
+              Named in honor of aviator Charles "Lucky Lindy" Lindbergh, this
+              dance is highly revered by enthusiasts, especially those who have
+              a deep appreciation of the history and culture of Swing dancing.
+              Accompanied by fast-tempo music, the Lindy Hop dazzles with
+              syncopated shuffles and energetic kicks, showcasing a thrilling
+              blend of agility and flair, stylishly inspired by the Charleston.
+            </p>
+            <h3 id="west-coast">West Coast Swing Lessons</h3>
+            <p>
+              When the music slows down, "Westies" step up, executing smooth,
+              precise movements with a laid-back swagger that defines the
+              quintessential cool of West Coast Swing. Originating from
+              California in the 1940s and dubbed "Sophisticated Swing", this
+              dance stands in elegant contrast to the riotous Lindy Hop.
+            </p>
+          </div>
+        </div>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      <section class="swing-playlist" id="playlist">
+        <h2>Looking for Swing Music?</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/3NUSByg8UpRkMtlKbLLb8J?utm_source=generator"
+          width="100%"
+          height="590"
+          frameborder="0"
+          title="Tango Spotify Playlist"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </section>
+      <!-- @@include('./partials/kathryn-quote.html') -->
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

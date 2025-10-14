@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>How we Teach | Arthur Murray Chevy Chase</title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="How we teach Ballroom Dance Lessons at Arthur Murray Chevy Chase. Our interrelated system is the best way to get on the dance floor fast! Walk in, dance out!"
+    />
+
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/how-we-teach.css" />
+  </head>
+
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1><span>How we Teach</span></h1>
+          <h2>Arthur Murray Chevy Chase</h2>
+        </div>
+      </section>
+      <section class="template-body">
+        <div class="template-text-1">
+          <h3>The Arthur Murray Method</h3>
+          <p>
+            Developed over 108 years, the Arthur Murray method has helped
+            countless people learn to dance. Our fool-proof method is proven and
+            second to none. Even if you have two left feet or no rhythm, we can
+            truly teach anyone to dance. Try our three-step method of private
+            lessons, group classes, and practice parties, and you’ll be on the
+            dance floor in no time!
+          </p>
+        </div>
+        <div class="video-player">
+          <iframe
+            src="https://player.vimeo.com/video/647904720?h=7c1aff5ff9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Arthur Murray"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+        <div class="template-angle">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./images/coupleLearningToDance.webp"
+            />
+            <img
+              src="./images/coupleLearningToDance.png"
+              alt="Couple Learning how to dance"
+              width="500"
+              height="333"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="template-text-2">
+            <h3>Community, fitness, romance, and more...</h3>
+            <p>
+              Why take ballroom dance lessons? Learning to dance is like opening
+              up a whole new world of possibilities; there are so many benefits
+              of dancing. Not only is it great for your health, dancing takes
+              everyday moments and turns them into special memories.
+            </p>
+            <p>
+              Whether you’re getting ready for an event, or just wanting to
+              learn for fun, dancing is a great investment that will last for
+              years to come. Getting started is easy, simply sign up for your
+              introductory lesson and experience the benefits for yourself.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="doorways" id="ballroom">
+        <h2>The Unit System</h2>
+        <ul class="cards">
+          <li class="card-item cardJs animation asl" id="card1">
+            <picture>
+              <source type="image/png" srcset="./images/privateLessons.png" />
+              <img
+                src="./images/privateLessons.png"
+                alt="1 person dancing"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+            <h3>Private Lessons</h3>
+            <div class="card-text">
+              <p class="classes">
+                One-on-one instruction is essential for learning quickly and
+                easily.
+              </p>
+
+              <p class="classes">
+                Private lessons are personalized by what you are taught, how you
+                are taught, and the pace at which you are taught.
+              </p>
+              <p class="classes">
+                Whether you want to work up a sweat or take it easy, stand out
+                on the floor or blend in with the crowd, we’ll customize a
+                lesson just for you.
+              </p>
+            </div>
+          </li>
+          <li class="card-item cardJs animation asl delay1" id="card2">
+            <picture>
+              <source type="image/png" srcset="./images/groupClasses.png" />
+              <img
+                src="./images/groupClasses.png"
+                alt="2 people dancing"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+            <h3>Group Classes</h3>
+            <div class="card-text">
+              <p class="classes">
+                Group instruction is perfect for muscle memory and repetition.
+              </p>
+
+              <p class="classes">
+                Group class allows you to practice with a variety of partners.
+                This ensures great dancing habits, good lead and follow, and the
+                chance to meet other students in the studio.
+              </p>
+
+              <p class="classes">
+                While there are always plenty of people to dance with, you are
+                by no means required to change partners.
+              </p>
+            </div>
+          </li>
+          <li class="card-item cardJs animation asl delay2" id="card3">
+            <picture>
+              <source type="image/png" srcset="./images/practiceParties.png" />
+              <img
+                src="./images/practiceParties.png"
+                alt="a disco ball with music notes"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+            <h3>Practice Parties</h3>
+            <div class="card-text">
+              <p class="classes">
+                Your chance for practical application, before hitting the dance
+                floor
+              </p>
+
+              <p class="classes">
+                Practice parties are a great way to practice all you’ve learned
+                on your private lessons and group classes.
+              </p>
+              <p class="classes">
+                A chance to get comfortable dancing with others on the floor, to
+                a variety of music, and with a variety of partners; all with the
+                instructors there to help you work out any kinks.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      @@include('./partials/kathryn-quote.html')
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

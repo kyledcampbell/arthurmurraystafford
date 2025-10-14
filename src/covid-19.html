@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Covid-19 | Arthur Murray Chevy Chase</title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Covid 19 Procedures for Arthur Murray Chevy Chase, located in Chevy Chase, Maryland."
+    />
+
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/covid.css" />
+  </head>
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1><span>Covid-19</span> <span>Procedures</span></h1>
+          <h2>Arthur Murray Chevy Chase</h2>
+        </div>
+      </section>
+      <section class="template-body">
+        <div class="template-text-1">
+          <h3>Studios are Open!</h3>
+          <p>Private & Online lessons by appointment</p>
+
+          <p>
+            We are teaching Private lessons, Group classes, & hosting Practice
+            Parties.
+          </p>
+
+          <p>
+            We will no longer be requiring masks for activities inside the
+            studio. We thank you for your continued support and understanding in
+            this ever changing environment.
+          </p>
+        </div>
+        <!-- <div class="video-player"><iframe src="https://player.vimeo.com/video/532060114?h=009df7df2f" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Arthur Murray"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+        <div class="template-angle">
+          <picture>
+            <source type="image/webp" srcset="./images/dogWithMask.webp" />
+            <img
+              src="./images/dogWithMask.png"
+              alt="Cute white fluffy dog wearing a medical mask"
+              width="333"
+              height="333"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="template-text-2">
+            <h3>Feeling Symptoms?</h3>
+            <p>
+              If you are feeling sick or experiencing any COVID-19 symptoms like
+              fever or cough, please stay home.
+            </p>
+            <p>
+              In an effort to maintain good health for all students and staff,
+              please wash your hands or use hand sanitiser before and after your
+              lessons.
+            </p>
+            <p>
+              Our cancellation policy is still in effect unless COVID-19
+              related.
+            </p>
+          </div>
+        </div>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      @@include('./partials/kathryn-quote.html')
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gift Certificates | Arthur Murray Chevy Chase</title>
+    @@include('./partials/head-basic.html')
+    <meta
+    name="description"
+    content="Ballroom Dance Lesson Gift Certificates for any occasion at Arthur Murray Chevy Chase. Perfect for Valentine's Day, Birthday, Christmas, Mother's Day, Father's day, and any other occasion."
+  />
+
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/gift-certificates.css" />
+  </head>
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1><span>Gift Certificates</h1>
+          <h2>Arthur Murray Chevy Chase</h2>
+        </div>
+      </section>
+      <section class="doorways" id="doorways">
+        <h2 >Get your loved one the gift of dance!</h2>
+        <ul class="cards">
+          <li class="card-item cardJs animation asl" id="card1">
+            <picture>
+              <source type="image/webp" srcset="./images/GiftCertificate-SampleProgram.webp">
+              <img src="./images/GiftCertificate-SampleProgram.jpg" alt="Gift Certificate - Sample Program" width="500" height="333" loading="lazy">
+            </picture>
+            <h3>$140</h3>
+            <div class="card-text">
+              <p class="classes">(2) Private Lessons <br> (2) Group Classes <br> (2) Practice Parties </p>
+              <div class="buttons">
+                <p><a href="https://buy.stripe.com/28o6pv6b3bBMbqoeUU" class="btn" target="_blank" aria-label="buy gift certificate - opens in a new window" rel="noreferrer">Buy Now</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="card-item cardJs animation asl delay1" id="card2">
+            <picture>
+              <source type="image/webp" srcset="./images/GiftCertificate-IntroductoryProgram.webp">
+              <img src="./images/GiftCertificate-IntroductoryProgram.jpg" alt="Gift Certificate - Introductory Program" width="1500" height="750" loading="lazy">
+            </picture>
+            <h3>$420</h3>
+            <div class="card-text">
+              <p class="classes">(4) Private Lessons <br>(4) Group Classes <br> (4) Practice Parties </p>
+              <div class="buttons">
+                <p><a href="https://buy.stripe.com/5kA3dj2YR9tE2TS001" class="btn" target="_blank" aria-label="buy gift certificate - opens in a new window" rel="noreferrer">Buy Now</a></p>
+                
+              </div>
+            </div>
+          </li>
+          <li class="card-item cardJs animation asl delay2" id="card3">
+            <picture>
+              <source type="image/webp" srcset="./images/GiftCertificate-WeddingPreProgram.webp">
+              <img src="./images/GiftCertificate-WeddingPreProgram.jpg" alt="Gift Certificate - Wedding Pre Program" width="1500" height="750" loading="lazy">
+            </picture>
+            <h3>$700</h3>
+            <div class="card-text">
+              <p class="classes">(6) Private Lessons <br>(6) Group Classes <br> (6) Practice Parties </p>
+              <div class="buttons">
+                <p><a href="https://buy.stripe.com/4gwg05fLDeNY3XW9AD" class="btn" target="_blank" aria-label="buy gift certificate - opens in a new window" rel="noreferrer">Buy Now</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      @@include('./partials/kathryn-quote.html')
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

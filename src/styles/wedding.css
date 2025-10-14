@@ -1,0 +1,254 @@
+.header {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.6)),
+    url(../images/WeddingDanceLessonsBanner.jpg);
+  background-position: 60% -1%;
+}
+.template-header-text {
+  margin: 0 0.5rem;
+}
+.template-header-text h2 {
+  max-width: 600px;
+}
+.template-body {
+  background-image: linear-gradient(
+      174deg,
+      hsla(0, 0%, 100%, 0.8) 0%,
+      hsla(0, 0%, 100%, 0.8) 57%,
+      hsla(0, 0%, 20%, 1) 57.08%,
+      hsla(0, 0%, 20%, 1) 87%,
+      hsla(0, 0%, 70%, 1) 87.08%
+    ),
+    url(../images/weddingDressPearls.jpg);
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: center center;
+}
+.template-body picture img {
+  margin: 0;
+  max-width: 600px;
+}
+.template-text-1 h3 {
+  color: var(--darkgray);
+}
+.template-text-1 {
+  color: var(--darkgray);
+}
+
+.template-text-2 {
+  color: var(--offwhite);
+}
+.wedding-playlist {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.6)),
+    url(../images/gayWeddingCoupleDancing.jpg);
+  background-size: cover;
+  background-position: 55% center;
+  display: grid;
+  grid-template-columns: 1em 1fr 1em;
+  padding: 3em 0;
+}
+.wedding-playlist iframe,
+.wedding-playlist h2 {
+  grid-column: 2 / 3;
+}
+
+.wedding-playlist h2 {
+  color: var(--offwhite);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.wedding-faq {
+  background-image: linear-gradient(
+      174deg,
+      hsla(0, 0%, 92%, 0.8) 0%,
+      hsla(0, 0%, 92%, 0.8) 100%
+    ),
+    url(../images/weddingDressPearls.jpg);
+  border-bottom: 1px solid var(--lightgray);
+  padding: 3em 0;
+  grid-template-columns: 1em 1fr 1em;
+  display: grid;
+}
+
+.faq {
+  grid-column: 2 / 3;
+}
+@media screen and (min-width: 500px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 100%, 0.8) 0%,
+        hsla(0, 0%, 100%, 0.8) 51%,
+        hsla(0, 0%, 20%, 1) 51.08%,
+        hsla(0, 0%, 20%, 1) 87%,
+        hsla(0, 0%, 70%, 1) 87.08%
+      ),
+      url(../images/weddingDressPearls.jpg);
+  }
+}
+@media screen and (min-width: 615px) {
+  .header {
+    background-position: 70% -1%;
+  }
+  .template-header-text h2 {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 655px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 100%, 0.8) 0%,
+        hsla(0, 0%, 100%, 0.8) 45%,
+        hsla(0, 0%, 20%, 1) 45.08%,
+        hsla(0, 0%, 20%, 1) 87%,
+        hsla(0, 0%, 70%, 0.5) 87.08%
+      ),
+      url(../images/weddingDressPearls.jpg);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 100%, 0.8) 0%,
+        hsla(0, 0%, 100%, 0.8) 54%,
+        hsla(0, 0%, 20%, 1) 54.08%,
+        hsla(0, 0%, 20%, 1) 67%,
+        hsla(0, 0%, 20%, 1) 67.08%
+      ),
+      url(../images/weddingDressPearls.jpg);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-position: center center;
+  }
+  .video-player {
+    margin: 0.5em auto 0 1.5em;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .wedding-playlist,
+  .header {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 80% 0%;
+  }
+}
+
+@media screen and (min-width: 655px) {
+  .wedding-faq {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 100%
+      ),
+      url(../images/weddingDressPearls.jpg);
+  }
+  .wedding-playlist {
+    grid-template-columns: 1fr 600px 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .wedding-faq {
+    grid-template-columns: 1rem 1fr 1rem;
+    padding: 5em 0;
+  }
+  .wedding-playlist {
+    padding: 5em 0;
+  }
+}
+
+/* faq */
+.faq h2 {
+  margin: 0 0 0.5em;
+  text-align: center;
+  font-weight: normal;
+}
+
+.faq input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.faq a {
+  color: var(--mediumblue);
+  text-decoration: underline;
+}
+.faq a:hover {
+  color: var(--lightblue);
+}
+
+.row {
+  display: flex;
+}
+
+.row .faq {
+  flex: 1;
+}
+.row .faq:last-child {
+  margin-left: 1em;
+}
+
+.tabs {
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tab {
+  width: 100%;
+  color: var(--darkgray);
+  overflow: hidden;
+  border: 1px solid var(--lightgray);
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+}
+.tab:last-of-type {
+  border-bottom: 1px solid var(--lightgray);
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: hsla(0, 0%, 92%, 0.8);
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+}
+.tab-label:hover {
+  background: var(--lightgray);
+}
+.tab-label::after {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  content: "\f054";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: var(--darkgray);
+  background: var(--offwhite);
+  transition: all 0.35s ease-in-out;
+  font-size: 0.85em;
+}
+.tab-content h3 {
+  font-size: var(--h5);
+  margin-bottom: 0.5em;
+}
+
+.faq input:checked + .tab-label {
+  background: var(--lightgray);
+}
+.faq input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.faq input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Salsa Lessons Chevy Chase | Arthur Murray Dance Studio Chevy Chase</title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Salsa dance lessons at Arthur Murray Chevy Chase, located in Chevy Chase, Maryland. Whether you
+      just want to survive on the dance floor or stand out in the crowd,
+      learning to dance has never been easier."
+    />
+    @@include('./partials/schema-main.html')
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/salsa.css" />
+  </head>
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1><span>Salsa Lessons</span> <span>Chevy Chase</span></h1>
+          <h2>Arthur Murray Dance Studio Chevy Chase</h2>
+        </div>
+      </section>
+      <section class="template-body">
+        <div class="template-text-1">
+          <h3>Salsa Lessons Chevy Chase</h3>
+          <p>Pass the chips, we’ve got the salsa… <br> dance lessons of course!</p>
+
+          <p class="margin-bottom">
+            Salsa dancing encompasses not one, but many styles of Latin dancing: Salsa (LA and Casino Style), Bachata, Merengue, and Cha Cha.
+          </p>
+
+          <h3 id="salsa">&#8220LA Style&#8221 Salsa</h3>
+          <p>
+            The most popular style danced in the United States: "LA Style" Salsa is known for
+            staying in a line (or slot) while changing places with your partner. Typically breaking on counts 1 and 5, with its simple steps
+            and fast-paced tempo, salsa is a great dance for learning spins,
+            face loops, and fast hand changes.
+          </p>
+
+          <p>
+            Salsa is the quintessential Latin dance you just can’t leave the
+            house without!
+          </p>
+        </div>
+        <div class="video-player">
+          <iframe
+            src="https://player.vimeo.com/video/532060114?h=009df7df2f"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Arthur Murray"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="template-angle">
+          <picture>
+            <source type="image/webp" srcset="./images/salsaDancers.webp" />
+            <img
+              src="./images/salsaDancers.png"
+              alt="Couple dancing salsa together in Chevy Chase, MD"
+              width="500"
+              height="333"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="template-text-2" >
+            <h3 id="bachata">Bachata Dance Lessons</h3>
+            <p>
+              With its slower tempo and sultry feel, this “slow” salsa dance is taking nightclubs by storm (often having its own room). Great for learning body rhythm, the bachata features spins, ripples, and sexy lines and dips. As the most romantic of all the salsa dances, bachata is the perfect dance for salsa clubs, weddings, and cruises alike. 
+            </p>
+            <h3 id="merengue">Merengue Dance Lessons</h3>
+            <p>
+              Calling all Partygoers! Merengue is the easiest Latin dance to learn. Its steady marching beat makes learning new steps or practicing Latin hip action a breeze! Just keep marching and dance this dance with ANYONE, regardless of skill level or experience. 
+            </p>
+          </div>
+        </div>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      <section class="salsa-playlist" id="playlist">
+        <h2>Looking for Salsa music?</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/7vOdK3PfH7lw4pUSL1MPNa?utm_source=generator"
+          width="100%"
+          height="590"
+          frameborder="0"
+          title="Salsa Spotify Playlist"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        ></iframe>
+      </section>
+      <!-- @@include('./partials/kathryn-quote.html') -->
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

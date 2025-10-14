@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Argentine Tango Lessons Chevy Chase | Arthur Murray Dance Studio Chevy
+      Chase
+    </title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Argentine Tango lessons in Chevy Chase Maryland at Arthur Murray Dance Studio Chevy Chase. We teach Argentine Tango, Tango Vals, and Milonga."
+    />
+    @@include('./partials/schema-main.html')
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/tango.css" />
+  </head>
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1>
+            <span>Argentine Tango Lessons</span> <span>in Chevy Chase, MD</span>
+          </h1>
+          <h2>Arthur Murray Dance Studio Chevy Chase</h2>
+        </div>
+      </section>
+      <section class="template-body">
+        <div class="template-text-1">
+          <h3 id="tango">Tango Lessons in Maryland</h3>
+          <p>
+            With its exact origins shrouded to this day in mystery, the
+            Argentine Tango blazed out of 19th century Buenos Aires, to become a
+            global phenomenon. To the unique music of the bandoneon, a type of
+            accordion, dancers move to the "Ritmo del Corazon", the Rhythm of
+            the Heart. Partners glide across the floor, blending slow sensual
+            movements with hypnotizing shapes and leg styling. Although a
+            wonderful dance for beginners, true Tango mastery becomes for many a
+            lifelong pursuit.
+          </p>
+        </div>
+        <div class="video-player">
+          <iframe
+            src="https://player.vimeo.com/video/532060114?h=009df7df2f"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Arthur Murray"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="template-angle">
+          <picture>
+            <source type="image/webp" srcset="./images/tangoCouple.webp" />
+            <img
+              src="./images/tangoCouple.png"
+              alt="Argetine Tango couple dancing together"
+              width="500"
+              height="333"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="template-text-2">
+            <h3 id="vals">Tango Vals Lessons</h3>
+            <p>
+              Taking inspiration from the waltzes of Vienna, Tango musicians
+              began around 1910 to compose songs with a swaying 3/4 rhythm. The
+              Tango Vals is accompanied by a strong underlying pulse and
+              exciting musical rhythms. Dancers incorporate sweeping elegant
+              movements, inspired by the Viennese Waltz. With a basic knowledge
+              of Argentine Tango, newcomer Tango Vals dancers can have fun with
+              classic Tango patterns, such as Salida and Ochos.
+            </p>
+            <h3 id="milonga">Milonga Lessons</h3>
+            <p>
+              Milonga is a term used for both a social tango gathering, as well
+              as the faster version of the Tango itself. With lightning-fast
+              footwork and playful movements, advanced Milonga dancers put the
+              thrilling musical rhythm at center stage. Beginners can enjoy the
+              Milonga by simply walking to the beat of the music!
+            </p>
+          </div>
+        </div>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      <section class="salsa-playlist" id="playlist">
+        <h2>Looking for Tango music?</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/239diRIOcytiTzlhSKGNtu?utm_source=generator"
+          width="100%"
+          height="590"
+          frameborder="0"
+          title="Tango Spotify Playlist"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </section>
+      <!-- @@include('./partials/kathryn-quote.html') -->
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>

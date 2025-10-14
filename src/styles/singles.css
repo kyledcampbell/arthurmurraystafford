@@ -1,0 +1,34 @@
+.header {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.7)),
+    url(../images/singlesDanceCover.jpg);
+  background-position: 75% 48%;
+}
+
+.template-text-2 p:first-of-type {
+  margin-bottom: 3em;
+}
+.template-text-2 {
+  color: var(--offwhite);
+}
+
+@media screen and (min-width: 615px) {
+  .header {
+    background-position-y: 40%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 49%,
+        var(--arthurMurrayBlue) 49.08%,
+        var(--arthurMurrayBlue) 87%
+      ),
+      url(../images/FootprintsBackground.svg);
+  }
+  .video-player {
+    margin: 0.5em auto 0 1.5em;
+  }
+}

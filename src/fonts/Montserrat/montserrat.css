@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("./Montserrat-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("./Montserrat-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("./Montserrat-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("./Montserrat-Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("./Montserrat-Italic.ttf") format("truetype");
+  font-display: swap;
+}
