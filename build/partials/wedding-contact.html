@@ -25,10 +25,8 @@
     name="contactForm"
     method="POST"
     id="contactForm"
-    action="./thank-you.html"
+    action="https://formspree.io/f/manppnro"
     class="form"
-    netlify-honeypot="bot-field"
-    data-netlify="true"
   >
     <h2>Start dancing today!</h2>
     <fieldset>
@@ -132,10 +130,19 @@
           required
         /><label class="consent-label" for="consent">
           By providing my phone number, I agree to be contacted by Arthur Murray
-          Chevy Chase via SMS regarding information on dance lessons. Message
+          Stafford via SMS regarding information on dance lessons. Message
           and data rates may apply. Message frequency varies</label
         >
       </div>
+      <label style="display: none" for="location"></label>
+      <select
+        style="display: none"
+        id="location"
+        name="location"
+        class="select-css"
+      >
+        <option value="stafford"></option>
+      </select>
       <p class="hidden">
         <label> Don't fill this out if you're human: <input name="bot-field" />
       </p>
