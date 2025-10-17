@@ -5,4 +5,4 @@ Disallow: /thank-you
 Disallow: /thank-you-gc
 Disallow: /thank-you-gc-completed
 
-Sitemap: https://chevychasearthurmurray.com/sitemap.xml
+Sitemap: https://arthurmurraystafford.com/sitemap.xml
