@@ -1,0 +1,19 @@
+{
+  "name": "gulp-fs",
+  "version": "0.0.2",
+  "description": "gulp-fs is expand fs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp-fs",
+    "gulp",
+    "fs"
+  ],
+  "author": "7ke",
+  "license": "ISC",
+  "devDependencies": {
+  
+  }
+}
